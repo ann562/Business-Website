@@ -3,118 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAGE - Home</title>
+    <title>Sweet Haven Cakes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+   <!-- Top Bar with Scrolling Text -->
+<div class="top-bar">
+    <p data-text='FREE SHIPPING On Orders Over $99 with Coupon "FREESHIPPING"'>
+        FREE SHIPPING On Orders Over $99 with Coupon "FREESHIPPING"
+    </p>
+</div>
+
+
     <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <a href="/">
-                <img src="/images/Sagelogo.png" alt="SAGE Logo">
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="/">HOME</a></li>
-            <li><a href="/git">GIT</a></li>
-            <li><a href="/linux">LINUX</a></li>
-            <li><a href="/webtech">WEB TECHNOLOGIES</a></li>
-            <li><a href="/tips">TIPS</a></li>
-        </ul>
-        <div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="/"><img src="/images/logo.png" alt="Sweet Haven Logo"></a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="/locations">LOCATIONS</a></li>
+                <li><a href="/about">ABOUT</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-text">
-            <h1>Welcome to SAGE</h1>
-            <p>Your ultimate guide to mastering Git, Linux, Web Technologies, and more.</p>
-            <a href="#resources" class="btn-primary">Explore Resources</a>
+            <h1>Welcome to Sweet Haven</h1>
+            <p>Bringing love, joy, and sweetness to every celebration.</p>
+            <a href="/cakes" class="btn-primary">Explore Our Cakes</a>
         </div>
     </section>
 
-    <!-- Main Content Section -->
-    <section class="content-section">
-        <div class="z-pattern">
-            <div class="section-one">
-                <h1>Learn Git</h1>
-                <p>Master version control with our comprehensive Git tutorials. Understand the history, commands, and workflows to streamline your development process.</p>
-                <a href="/git" class="btn-primary">Explore Git</a>
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>Our Story</h2>
+        <p>At Sweet Haven, we believe every occasion deserves a touch of sweetness. With love and care, we craft custom cakes and treats that make your celebrations unforgettable.</p>
+        <a href="/about" class="btn-secondary">Learn More</a>
+    </section>
+
+    <!-- Featured Cakes Section -->
+    <section class="cake-gallery">
+        <h2>Our Creations</h2>
+        <div class="gallery-grid">
+            <div class="cake-item">
+                <div class="cake-badge">BEST SELLER</div>
+                <img src="/images/cake1.webp" alt="Birthday Cake">
+                <h3>Birthday Cake</h3>
+                <p>Our bestselling Birthday Cake has three tiers of rainbow-flecked vanilla...</p>
+                <button class="btn-primary">Buy Now</button>
             </div>
-            <div class="section-three">
-                <h2>Why Linux?</h2>
-                <p>Discover why Linux powers the majority of servers, supercomputers, and development environments. Learn to navigate and operate like a pro.</p>
-                <a href="/linux" class="btn-primary">Learn Linux</a>
+            <div class="cake-item">
+                <div class="cake-badge limited-time">LIMITED TIME</div>
+                <img src="/images/cake2.webp" alt="Peppermint Bark Cake">
+                <h3>Peppermint Bark Cake</h3>
+                <p>Our signature holiday cake is back! This decadent winter wonder starts with rich...</p>
+                <button class="btn-primary">Buy Now</button>
+            </div>
+            <div class="cake-item">
+                <div class="cake-badge new">NEW!</div>
+                <img src="/images/cake3.webp" alt="Quadruple Chocolate Cake">
+                <h3>6" Quadruple Chocolate Cake</h3>
+                <p>This chocolate on chocolate cake is not for the faint of heart. We were so...</p>
+                <button class="btn-primary">Buy Now</button>
             </div>
         </div>
     </section>
 
+    <!-- Featured Holiday Box Section -->
+    <section class="featured-box">
+        <div class="featured-box-content">
+            <div class="featured-box-image">
+                <img src="/images/box.webp" alt="Sweet Haven Holiday Box">
+            </div>
+            <div class="featured-box-text">
+                <h2>SPREAD HOLIDAY JOY WITH THE SWEET HAVEN HOLIDAY BOX!</h2>
+                <p>
+                    This season, make your celebrations magical with our exclusive <strong>Holiday Box</strong>. 
+                    Filled with 12 delectable cakes and treats, lovingly handcrafted with festive flavors, 
+                    it's the perfect gift for your loved ones—or a delightful indulgence for yourself!
+                </p>
+                <p>Decorated in cheerful holiday colors and wrapped with care, the <strong>Sweet Haven Holiday Box</strong> adds a touch of sweetness to your Christmas cheer.</p>
+                <a href="/holiday-box" class="btn-primary">Order Your Holiday Box</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
     <section class="testimonials">
-        <h2>What People Say</h2>
-        <div class="testimonials-container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-grid">
             <div class="testimonial-item">
-                <img src="/images/person1.png" alt="User 1" class="testimonial-pfp">
-                <p class="testimonial-quote">"SAGE has been a game-changer in my learning journey!"</p>
-                <p class="testimonial-name">- Jane Doe</p>
+                <p>"The cake was an absolute masterpiece! Stunning to look at, heavenly to taste!"</p>
+                <div class="stars">★★★★★</div>
+                <h4>- Emily W.</h4>
             </div>
             <div class="testimonial-item">
-                <img src="/images/person3.png" alt="User 2" class="testimonial-pfp">
-                <p class="testimonial-quote">"The resources and tutorials are easy to follow and incredibly helpful."</p>
-                <p class="testimonial-name">- John Smith</p>
+                <p>"Our wedding cake was everything we dreamed of. Sweet Haven exceeded expectations!"</p>
+                <div class="stars">★★★★★</div>
+                <h4>- Michael & Anna</h4>
             </div>
             <div class="testimonial-item">
-                <img src="/images/person2.png" alt="User 3" class="testimonial-pfp">
-                <p class="testimonial-quote">"I gained confidence in Git and Linux thanks to SAGE. Awesome website useful"</p>
-                <p class="testimonial-name">- Alice Brown</p>
+                <p>"I ordered a custom birthday cake, and it was perfect. Will definitely come back!"</p>
+                <div class="stars">★★★★★</div>
+                <h4>- Sarah L.</h4>
             </div>
         </div>
-    </section>
-    
-    <!-- Resources Section -->
-    <section id="resources" class="resources">
-        <h2>Downloadable Resources</h2>
-        <ul class="resource-list">
-            <li><a href="/downloads/git-cheat-sheet.pdf" download>Git Cheat Sheet</a></li>
-            <li><a href="/downloads/linux-commands-guide.pdf" download>Linux Commands Guide</a></li>
-            <li><a href="/downloads/web-techniques.pdf" download>Web Techniques</a></li>
-            <li><a href="/downloads/productivity-tips.pdf" download>Productivity Tips</a></li>
-        </ul>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-links">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/git">Git</a></li>
-                <li><a href="/linux">Linux</a></li>
-                <li><a href="/webtech">Web Technologies</a></li>
-                <li><a href="/tips">Tips</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Column 1: Logo and About -->
+            <div class="footer-column">
+                <img src="/images/logo.png" alt="Sweet Haven Logo" class="footer-logo">
+                <p class="footer-about">
+                    Sweet Haven Cakes is your destination for delightful, handcrafted cakes 
+                    and pastries. Every bite is made with love to make your celebrations unforgettable.
+                </p>
+            </div>
+    
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/locations">Our Locations</a></li>
+                    <li><a href="/gift-cards">Gift Cards</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                </ul>
+            </div>
+    
+            <!-- Column 3: Social Media and Contact -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="#"><img src="/images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="/images/instagram.png" alt="Instagram"></a>
+                   
+                </div>
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:info@sweethaven.com">info@sweethaven.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+            </div>
+    
+            <!-- Column 4: Newsletter Signup -->
+            <div class="footer-column">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest offers and updates.</p>
+                <form class="footer-subscription-form" action="#" method="post">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
         </div>
-        <div class="footer-copy">
-            <p>&copy; 2024 SAGE. All Rights Reserved.</p>
-            <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sweet Haven Cakes. Crafted with love.</p>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
         </div>
     </footer>
-
-    <!-- JavaScript -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const hamburger = document.querySelector(".hamburger");
-            const navLinks = document.querySelector(".nav-links");
-
-            hamburger.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
-                hamburger.classList.toggle("active");
-            });
-        });
-    </script>
-</body>
-</html>
-
-
+    
