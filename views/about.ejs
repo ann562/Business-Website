@@ -5,197 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Sweet Haven Cakes</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #EBE6DC;
-            color: #4A4A4A;
-        }
-
-        .about-hero {
-            position: relative;
-            height: 60vh;
-            background: linear-gradient(rgba(113, 85, 100, 0.6), rgba(113, 85, 100, 0.6)),
-                        url('/api/placeholder/1200/800') center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .about-hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            margin: 0;
-            animation: fadeIn 1s ease-out;
-        }
-
-        .story-section {
-            padding: 4rem 2rem;
-            background-color: #F8F5F1;
-        }
-
-        .story-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .story-text {
-            padding: 2rem;
-        }
-
-        .story-text h2 {
-            font-family: 'Playfair Display', serif;
-            color: #715564;
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .story-text p {
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        .story-image {
-            position: relative;
-            padding: 2rem;
-        }
-
-        .story-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .values-section {
-            padding: 4rem 2rem;
-            background-color: #D8CFBB;
-        }
-
-        .values-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .values-container h2 {
-            font-family: 'Playfair Display', serif;
-            color: #715564;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-
-        .value-card {
-            background-color: #F8F5F1;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .value-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .value-card h3 {
-            color: #715564;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .value-card p {
-            color: #4A4A4A;
-            line-height: 1.6;
-        }
-
-        .team-section {
-            padding: 4rem 2rem;
-            background-color: #F8F5F1;
-        }
-
-        .team-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .team-container h2 {
-            font-family: 'Playfair Display', serif;
-            color: #715564;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-        }
-
-        .team-member {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .team-member img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin-bottom: 1.5rem;
-            object-fit: cover;
-        }
-
-        .team-member h3 {
-            color: #715564;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .team-member p {
-            color: #B2A37D;
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @media (max-width: 768px) {
-            .story-container {
-                grid-template-columns: 1fr;
-            }
-
-            .about-hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .story-text, .story-image {
-                padding: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/css/about.css">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="/"><img src="/images/logo.png" alt="Sweet Haven Logo"></a>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
 </head>
 <body>
     <div class="about-hero">
@@ -206,14 +28,28 @@
         <div class="story-container">
             <div class="story-text">
                 <h2>A Legacy of Love & Sweetness</h2>
-                <p>Sweet Haven began in 2015 with a simple dream: to create beautiful, delicious cakes that bring joy to every celebration. What started as a small home kitchen has blossomed into a beloved bakery, serving our community with passion and creativity.</p>
-                <p>Every cake we create is a labor of love, handcrafted with premium ingredients and decorated with meticulous attention to detail. We believe that every celebration deserves something extraordinary, and we pour our hearts into making each dessert perfect.</p>
+                <p>
+                    Sweet Haven began in 2015 with a simple dream: to create beautiful, delicious cakes that bring joy to every celebration. What started as a small home kitchen has blossomed into a beloved bakery, serving our community with passion and creativity.
+                </p>
+                <p>
+                    Every cake we create is a labor of love, handcrafted with premium ingredients and decorated with meticulous attention to detail. We believe that every celebration deserves something extraordinary, and we pour our hearts into making each dessert perfect. Whether it's a grand wedding, an intimate birthday, or just a reason to treat yourself, our cakes are designed to make every moment unforgettable.
+                </p>
+                <p>
+                    At Sweet Haven, we take pride in our commitment to quality and innovation. Over the years, we've introduced seasonal flavors, custom designs, and a range of desserts that cater to all tastes and occasions. Each recipe is carefully crafted and tested to ensure it meets our high standards of excellence, blending classic techniques with modern artistry.
+                </p>
+                <p>
+                    Our journey wouldn’t have been possible without the support of our incredible community. Your trust and love have inspired us to keep pushing boundaries, trying new ideas, and expanding our offerings. From our family to yours, we extend heartfelt gratitude for letting us be part of your special moments.
+                </p>
+                <p>
+                    As we look to the future, our vision remains the same: to create desserts that not only taste amazing but also tell a story. We invite you to explore our creations, indulge in our sweet treats, and become part of the Sweet Haven family. After all, life is too short not to celebrate the sweet moments.
+                </p>
             </div>
             <div class="story-image">
-                <img src="/api/placeholder/600/400" alt="Our bakery story">
+                <img src="/images/story.webp" alt="Our bakery story">
             </div>
         </div>
     </section>
+    
 
     <section class="values-section">
         <div class="values-container">
@@ -235,30 +71,57 @@
         </div>
     </section>
 
-    <section class="team-section">
-        <div class="team-container">
-            <h2>Meet Our Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="/api/placeholder/200/200" alt="Sarah Johnson">
-                    <h3>Sarah Johnson</h3>
-                    <p>Head Pastry Chef</p>
-                    <p>With over 15 years of experience, Sarah leads our kitchen with creativity and passion.</p>
-                </div>
-                <div class="team-member">
-                    <img src="/api/placeholder/200/200" alt="Michael Chen">
-                    <h3>Michael Chen</h3>
-                    <p>Cake Designer</p>
-                    <p>Michael's artistic vision brings our custom cake designs to life.</p>
-                </div>
-                <div class="team-member">
-                    <img src="/api/placeholder/200/200" alt="Emma Davis">
-                    <h3>Emma Davis</h3>
-                    <p>Pastry Artist</p>
-                    <p>Emma specializes in creating intricate sugar flowers and decorations.</p>
-                </div>
-            </div>
+    
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Logo and About -->
+        <div class="footer-column">
+            <img src="/images/logo.png" alt="Sweet Haven Logo" class="footer-logo">
+            <p class="footer-about">
+                Sweet Haven Cakes is your destination for delightful, handcrafted cakes 
+                and pastries. Every bite is made with love to make your celebrations unforgettable.
+            </p>
         </div>
-    </section>
-</body>
-</html>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/locations">Our Locations</a></li>
+                <li><a href="/gift-cards">Gift Cards</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Social Media and Contact -->
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="footer-social">
+                <a href="#"><img src="/images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="/images/instagram.png" alt="Instagram"></a>
+               
+            </div>
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:info@sweethaven.com">info@sweethaven.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+        </div>
+
+        <!-- Column 4: Newsletter Signup -->
+        <div class="footer-column">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to our newsletter for the latest offers and updates.</p>
+            <form class="footer-subscription-form" action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Sweet Haven Cakes. Crafted with love.</p>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+    </div>
+</footer>
