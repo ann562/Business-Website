@@ -22,7 +22,7 @@ body {
 /* Scrolling Text Container */
 .top-bar p {
     display: inline-block;
-    animation: infiniteScroll 10s linear infinite; /* Smooth infinite animation */
+    animation: infiniteScroll 15s linear infinite; /* Smooth infinite animation */
     font-family: 'Playfair Display', serif;
     font-size: 1rem;
     white-space: nowrap;
